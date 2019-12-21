@@ -132,6 +132,11 @@ header {
     margin: 0 auto;
     flex-wrap: wrap;
 }
+.icon-box{
+    max-width: 300px;
+    min-width: 200px;
+    margin: 10px;
+}
 
 .icon-png {
     display: block;
@@ -179,9 +184,15 @@ header {
 .people-info {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
-.people-1 {}
+.people {
+    max-width: 300px;
+    min-width: 200px;
+    margin: 10px;
+}
 
 .people-name {
     display: block;
@@ -233,12 +244,14 @@ header {
 .progress-icon{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .circle-big {
     position: relative;
     width: 114px;
     height: 114px;
     margin: 30px auto 25px auto;
+    margin: 15px;
 }
 
 .circle-big svg {
@@ -337,9 +350,12 @@ header {
 .macup-box-4{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .macup{
-    width: 400px;
+    max-width: 600px;
+    min-width: 200px;
+    margin: 20px;
 }
 .img-macup{
     display: block;
@@ -373,10 +389,17 @@ header {
     color: white;
 }
 
-.reviews {
+.reviews-box {
     margin-top: 20px;
-    display: inline-block;
-    width: 49%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.reviews {
+    margin: 20px;
+    max-width: 500px;
+    min-width: 200px;
 }
 
 .reviews-img {
@@ -388,12 +411,13 @@ header {
 
 .rew {
     padding: 15px;
-    box-sizing: border-box;
-    background-color: #ebebeb;
-    border-radius: 10px;
     text-align: justify;
-    position: relative;
     margin-right: 20px;
+    font-family: Titillium;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    font-style: italic;
 }
 
 .name {
@@ -408,6 +432,59 @@ header {
 .box-6 {
     background-color: #3c5499;
     padding: 60px;
+    color: white;
+}
+
+.form-1{
+    text-align: center;
+    max-width: 604px;
+    min-width: 300px;
+    color: white;
+}
+
+.txt{
+    font-family: Titillium;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    display: inline-block;
+    background-color: #273a71;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    min-width: 300px;
+    box-sizing: border-box;
+}
+.txtarea{
+    font-family: Titillium;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    display: block;
+    background-color: #273a71;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+.btn-send-mail{
+    background-color: #30bae7;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: Titillium;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    border: none;
+    
+}
+
+::-webkit-input-placeholder{
     color: white;
 }
 
