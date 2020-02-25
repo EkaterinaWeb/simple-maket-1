@@ -31,7 +31,7 @@ body{
     margin: 0 auto;
 }
 .w-site{
-    width: 100%;
+    max-width: 1360px;
 }
 
 header {
@@ -42,6 +42,7 @@ header {
 
 .menu-header {
     display: flex;
+    max-width: 1360px;
 }
 
 .logo {}
@@ -131,6 +132,7 @@ header {
     justify-content: center;
     margin: 0 auto;
     flex-wrap: wrap;
+    max-width: 1360px;
 }
 .icon-box{
     max-width: 300px;
@@ -186,6 +188,7 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    max-width: 1360px;
 }
 
 .people {
@@ -244,14 +247,14 @@ header {
 .progress-icon{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    max-width: 1360px;
 }
 .circle-big {
     position: relative;
     width: 114px;
     height: 114px;
-    margin: 30px auto 25px auto;
-    margin: 15px;
+    margin: 20px 40px;
 }
 
 .circle-big svg {
@@ -351,6 +354,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 1360px;
 }
 .macup{
     max-width: 600px;
@@ -394,6 +398,7 @@ header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 1360px;
 }
 
 .reviews {
@@ -494,7 +499,8 @@ footer {
     color: white;
     padding: 30px;
     text-align: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
+    max-width: 1360px;
 }
 .link-footer{
     text-decoration: none;
@@ -510,6 +516,98 @@ footer {
     color: #30bae7;
     
 }
+
+
+/*****************MODAL**********************/
+
+.modal {
+  display: none;
+  min-height: 300px;
+  min-width: 320px;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  background: white;
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+}
+.open-modal {
+  display: block;
+}
+.closed{
+    display: none;
+}
+
+.modal-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px 50px 20px 20px;
+}
+
+.modal .close-button {
+  outline: none;
+  border: 0;
+  background: #30bae7;
+  color: white;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.open-button {
+  display: block;
+    outline: none;
+    border: 1px solid grey;
+    color: white;
+    background-color: darkmagenta;
+    padding: 10px 40px;
+    margin: 0 auto;
+}
+
+
+.txtname, .txtemail {
+    font-family: Titillium;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    display: block;
+    background-color: #c03f72;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    min-width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.txtareamodal{
+    font-family: Titillium;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    display: block;
+    background-color: #c03f72;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    min-width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+/*****************END MODAL**********************/
+
 @media screen and (max-width: 500px){
 
     .box-4{

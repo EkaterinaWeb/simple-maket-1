@@ -24,10 +24,21 @@
                         <li class="menu-list"><a href="#" class="menu-link">Contact</a></li>
                     </ul>
                 </nav>
-            </div> <span class="txt-header">Hi there! We are the new kids on the block<br>
+            </div> 
+            <span class="txt-header">Hi there! We are the new kids on the block<br>
             and we build awesome websites and mobile apps.</span>
-            <button class="btn-1">Work with us!</button>
+            <button class="btn-1" id="open-button">Work with us!</button>
+            <div class="modal" id="modal">
+                <button class="close-button" id="close-button">CLOSE</button>
+                    <form class="form-1" autocomplete="off" action='email.php' method='post'>
+                            <input id="name" class="txtname" type='name' name='name' required placeholder="Your Name">
+                            <input id="email" class="txtemail" name='email' type="email" required placeholder="Your Email">
+                            <textarea id="msg" class="txtareamodal" name="msg" placeholder="Your Message:"></textarea>
+                            <input class="btn-send-mail" type='submit' value='Send message'>
+                    </form>
+            </div>
         </div>
+        
     </header>
     <main>
         <section class="box-1">
@@ -147,5 +158,6 @@
     <footer>
         <div class="w-site"> <a href="#" class="link-footer">Facebook</a> <a href="#" class="link-footer">Twitter</a> <a href="#" class="link-footer">Google+</a> <a href="#" class="link-footer">LinkedIn</a> <a href="#" class="link-footer">Behance</a> <a href="#" class="link-footer">Dribble</a> <a href="#" class="link-footer">GitHub</a> </div>
     </footer>
+    <script src="simple-maket/js/modal-script.js"></script>
 </body>
 </html>
